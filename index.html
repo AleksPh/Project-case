@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YourRateExchange</title>
+    <link rel="shortcut icon" href="/images/logo.png" type="image/png">
+    <link rel="stylesheet" href="/css/core.css">
+</head>
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="header__wrapper">
+        <div class="header__wrapper-logo">
+          <div class="header__wrapper-logo-img"><img src="/images/logo.png" alt="#"></div>
+          <div class="header__wrapper-logo-text">YourRateExchange</div>
+        </div>
+
+        <div class="header__wrapper-set">
+          <div class="header__wrapper-set-img"><img src="/images/set.png" alt="#"></div>
+          <div class="header__wrapper-set-text">Settings</div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="main-left">
+        <div class="main-text">
+          <div class="main-text__title">Fast Rate Exchange</div>
+          <div class="main-text__text">This is a simple currency translator. Here you can find out the exact currency exchange rate and convert from one to another!</div>
+
+        </div>
+      </div>
+      <div class="main-right">
+        <div class="main-right__block">
+          <div class="main-right__block-content">
+            <!-- <div class="main-right__block-content"> -->
+
+              <div class="main-right__block-1">
+                <h2 class="block-1__title">Current Rate</h2>
+                <div id="exchangeRate" class="block-1__title-text"></div>
+              </div>
+
+          <div class="main-right__block-2">
+            <h2 class="block-2__title">Сurrency Сonversion</h2>
+
+            <div class="block-2__wrapper">
+              <div class="block-2__left">
+                <div class="block-2__content">
+                  <div class="block-2__content-1">
+                    <input class="block-2__input" type="radio" name="currencyType" id="uahToUsd" value="uahToUsd" checked>
+                    <label class="block-2__label" for="uahToUsd">UAH -> USD</label>
+                  </div>
+                  <div class="block-2__content-2">
+                    <input class="block-2__input" type="radio" name="currencyType" id="usdToUah" value="usdToUah">
+                <label class="block-2__label" for="usdToUah">USD -> UAH</label>
+              </div>
+
+
+            </div>
+
+
+    
+          </div>
+          <div class="block-2__right">
+            <div class="right-top">
+              <label class="right-top__label" for="amount">Enter amount</label>
+              <input class="right-top__input" type="number" id="amount" min="0">
+            </div>
+
+            <div class="rigth_bottom">
+              <button class="rigth_bottom__button" onclick="exchangeCurrency()">Convert</button>
+            <div class="main-text__result" id="result"></div>
+            </div>
+            
+
+
+
+          </div>
+
+         
+            </div>
+            
+            
+          
+          </div>
+          <div class="main-right__block-3">
+            <h2 class="subscribe-text">Subscribe to exchange rate updates</h2>
+            <div class="block-3__content">
+
+            <form id="subscriptionForm" class="subscribe-form">
+              <label  for="email" class="subscribe-form__label">Your Email:</label>
+              <input type="email" id="email" name="email" class="subscribe-form__input" required>
+              <button type="submit" class="subscribe-form__button">Subscribe</button>
+            </form>
+            </div>
+            
+          </div>
+         
+        </div>
+       
+      </div>
+      <div class="main-right__sidebar">
+        <div class="main-right__sidebar-1"></div>
+        <div class="main-right__sidebar-2"></div>
+        <div class="main-right__sidebar-3"></div>
+        <div class="main-right__sidebar-4"></div>
+      </div>
+    </main>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <h2 class="title">Поточний курс валют</h2>
+    <div id="exchangeRate" class="title__text"></div>
+    
+
+
+    <h2 class="main-text">Обмін валют</h2>
+    <input type="radio" name="currencyType" id="uahToUsd" value="uahToUsd" checked>
+    <label for="uahToUsd">Гривні в долари</label>
+    <input type="radio" name="currencyType" id="usdToUah" value="usdToUah">
+    <label for="usdToUah">Долари в гривні</label>
+
+    <label class="main-text__text" for="amount">Введіть суму:</label>
+    <input type="number" id="amount" min="0">
+    <button class="main-text__button" onclick="exchangeCurrency()">Обміняти</button>
+    <div class="main-text__result" id="result"></div>
+    
+
+
+
+    <h2 class="subscribe-text">Підписка на оновлення курсу валют</h2>
+    <form id="subscriptionForm" class="subscribe-form">
+        <label for="email" class="subscribe-form__label">Введіть вашу пошту:</label>
+        <input type="email" id="email" name="email" class="subscribe-form__input" required>
+        <button type="submit" class="subscribe-form__button">Підписатися</button>
+    </form> -->
+    
+    <script src="exchange.js"></script>
+    <script src="client.js"></script>
+</body>
+</html>
