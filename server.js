@@ -34,11 +34,13 @@ app.post('/subscribe-update', async (req, res) => {
 // Функція для відправлення листів з оновленням курсу валют
 const sendEmails = async () => {
   try {
-    const response = await axios.get('https://api.exchangerate-api.com/v4/latest/USD');
+    const response = await axios.get(
+      'https://api.exchangerate-api.com/v4/latest/USD',
+    );
     const uahRate = response.data.rates.UAH;
 
     const users = await User.find({});
-    users.forEach(user => {
+    users.forEach((user) => {
       transporter.sendMail({
         from: process.env.EMAIL,
         to: user.email,
@@ -59,3 +61,4 @@ const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
+

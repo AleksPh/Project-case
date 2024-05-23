@@ -6,10 +6,52 @@
     <title>YourRateExchange</title>
     <link rel="shortcut icon" href="/images/logo.png" type="image/png">
     <link rel="stylesheet" href="/css/core.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
   <div class="wrapper">
+
+
+
+    <!-- <div class="toast">
+  
+      <div class="toast-content">
+        <i class="fas fa-solid fa-check check"></i>
+    
+        <div class="message">
+          <span class="text text-1">Success</span>
+          <span class="text text-2">Your changes has been saved</span>
+        </div>
+      </div>
+      <i class="fa-solid fa-xmark close"></i>
+      <div class="progress"></div>
+    </div> -->
+
+
+
     <header class="header">
+
+
+
+
+      <div class="toast">
+  
+        <div class="toast-content">
+          <i class="fas fa-solid fa-check check"></i>
+      
+          <div class="message">
+            <span class="text text-1">Success</span>
+            <span class="text text-2">Your changes has been saved</span>
+          </div>
+        </div>
+        <i class="fa-solid fa-xmark close"></i>
+        <div class="progress"></div>
+      </div>
+
+
+
+
+
       <div class="header__wrapper">
         <div class="header__wrapper-logo">
           <div class="header__wrapper-logo-img"><img src="/images/logo.png" alt="#"></div>
@@ -17,8 +59,9 @@
         </div>
 
         <div class="header__wrapper-set">
-          <div class="header__wrapper-set-img"><img src="/images/set.png" alt="#"></div>
-          <div class="header__wrapper-set-text">Settings</div>
+          <div class="header__wrapper-set-img"><img src="/images/reg.png" alt="#"></div>
+          <div class="header__wrapper-set-text"><a href="reg.html">Sign Up</a></div>
+          <!-- <a href=""></a> -->
         </div>
       </div>
     </header>
@@ -119,33 +162,11 @@
 
 
 
-    <!-- <h2 class="title">Поточний курс валют</h2>
-    <div id="exchangeRate" class="title__text"></div>
-    
 
-
-    <h2 class="main-text">Обмін валют</h2>
-    <input type="radio" name="currencyType" id="uahToUsd" value="uahToUsd" checked>
-    <label for="uahToUsd">Гривні в долари</label>
-    <input type="radio" name="currencyType" id="usdToUah" value="usdToUah">
-    <label for="usdToUah">Долари в гривні</label>
-
-    <label class="main-text__text" for="amount">Введіть суму:</label>
-    <input type="number" id="amount" min="0">
-    <button class="main-text__button" onclick="exchangeCurrency()">Обміняти</button>
-    <div class="main-text__result" id="result"></div>
-    
-
-
-
-    <h2 class="subscribe-text">Підписка на оновлення курсу валют</h2>
-    <form id="subscriptionForm" class="subscribe-form">
-        <label for="email" class="subscribe-form__label">Введіть вашу пошту:</label>
-        <input type="email" id="email" name="email" class="subscribe-form__input" required>
-        <button type="submit" class="subscribe-form__button">Підписатися</button>
-    </form> -->
     
     <script src="exchange.js"></script>
     <script src="client.js"></script>
+    <script src="server.js"></script>
+
 </body>
 </html>
