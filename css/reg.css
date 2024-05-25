@@ -150,10 +150,13 @@ input::placeholder {
   height: 100vh;
   background: url("/images/bgim.png") no-repeat center;
   background-size: cover;
+  flex-direction: column;
+  /* justify-content: space-between; */
 }
 .user_options-container {
   position: relative;
   width: 80%;
+  margin-bottom: 200px;
 }
 .user_options-text {
   display: -webkit-box;
@@ -206,9 +209,7 @@ input::placeholder {
   background-color: #ccc;
 }
 
-/**
- * Login and signup forms
- */
+
 .user_options-forms {
   position: absolute;
   top: 50%;
@@ -367,4 +368,37 @@ input::placeholder {
   .user_options-unregistered {
     padding: 50px 45px;
   }
+}
+
+
+.home-btn{
+  padding: 20px;
+  background-color: #e8716d;
+  border-radius: 10px;
+  
+  display: flex;
+  justify-content: center;
+  margin-left: 20px;
+  margin-bottom: 20px;
+
+
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  -webkit-transition: background-color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
+
+}
+.home-img{
+  max-width: 20px;
+  max-height: 20px;
+  background-size: cover;
+  margin-right: 10px;
+}
+
+.home-btn:hover{
+  background-color: #e14641;
 }

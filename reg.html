@@ -60,26 +60,31 @@
         </div>
         <div class="user_forms-signup">
           <h2 class="forms_title">Sign Up</h2>
-          <form class="forms_form">
-            <fieldset class="forms_fieldset">
-              <div class="forms_field">
-                <input type="text" placeholder="Full Name" class="forms_field-input" required />
+          <form class="forms_form" action="/functions/register.php" method="post">
+              <fieldset class="forms_fieldset">
+                  <div class="forms_field">
+                      <input type="text" placeholder="Full Name" class="forms_field-input" name="fullname" required />
+                  </div>
+                  <div class="forms_field">
+                      <input type="email" placeholder="Email" class="forms_field-input" name="email" required />
+                  </div>
+                  <div class="forms_field">
+                      <input type="password" placeholder="Password" class="forms_field-input" name="password" required />
+                  </div>
+              </fieldset>
+              <div class="forms_buttons">
+                  <input type="submit" value="Sign up" class="forms_buttons-action button_click">
               </div>
-              <div class="forms_field">
-                <input type="email" placeholder="Email" class="forms_field-input" required />
-              </div>
-              <div class="forms_field">
-                <input type="password" placeholder="Password" class="forms_field-input" required />
-              </div>
-            </fieldset>
-            <div class="forms_buttons">
-              <input type="submit" value="Sign up" class="forms_buttons-action button_click" >
-            </div>
           </form>
-        </div>
+      </div>
       </div>
     </div>
+    <!-- <button class="home-btn"> <img class="home-img" src="/images/free-icon-left-arrow-329347.png" alt="##"><a href="index.html"> Back to Your-Rate-Exchange</a> </button> -->
+
+    <a href="index.html"><button class="home-btn"> <img class="home-img" src="/images/free-icon-left-arrow-329347.png" alt="##">Back to Your-Rate-Exchange </button></a> 
   </section>
+
+  
 
 
   <script src="reg.js"></script>

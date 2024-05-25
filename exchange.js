@@ -11,7 +11,7 @@ function getExchangeRate() {
     .catch((error) => console.error('Помилка отримання курсу валют:', error));
 }
 
-// Функція для обміну гривень на долари
+
 function exchangeCurrency() {
   const amount = parseFloat(document.getElementById('amount').value);
   if (!isNaN(amount)) {
